@@ -109,7 +109,8 @@ cp .env .env.local
 php bin/console doctrine:database:create
 php bin/console doctrine:migrations:migrate
 php bin/console doctrine:schema:validate
-php -S localhost:8000 -t public
+primeiro rode: php bin/console assets:install public
+depois rode: php -S localhost:8000 -t public
 ```
 
 ### 🔄 Fluxo de Sincronização do Banco de Dados
@@ -250,3 +251,5 @@ php bin/console debug:router
 # 📄 Licença
 
 Desenvolvido por William Araújo Gonçalves da Silva
+
+# infos de alteracoes
